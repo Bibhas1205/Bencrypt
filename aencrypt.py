@@ -6,8 +6,8 @@
     Date : 19/02/2023
     version : 0.1v
     Encoding : UTF-8
-    Lines : 87 lines
-    Actual code : 64 lines
+    Lines : 88 lines
+    Actual code : 63 lines
     
     DOCUMENTATION
                                                
@@ -74,13 +74,13 @@ try:
             print("\n\t--help   \t:\tTo show help")
             print("\n\t--flood  \t:\tTo recursively encryption")
             print("\n\t--destroy\t:\tTo self destroy")
-            print("\n\tUse      \t:\tpython3 aencrypt.py [pin_list] file_name")
-        elif(len(sys.argv)>=3): 
-            encrypt_decrypt(sys.argv[1],sys.argv[2]) # [key list] [file name]
+            print("\n\tUse      \t:\tpython3 aencrypt.py [pin_list] file_name") 
     elif(len(sys.argv)==3):
         if(sys.argv[2]=="--flood"):
             path=os.getcwd()
             encrypt_flood(path)
+        else:
+            encrypt_decrypt(sys.argv[1],sys.argv[2]) # [key list] [file name]
     else:
         print("\n\tYou can't use more that 2 arguments")
 except:
