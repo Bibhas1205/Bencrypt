@@ -14,13 +14,13 @@
     1)  This program is fully based on Python or Python3
     2)  The Program name can be modified.
     3)  It can perform a Byte encryption of any types of files, like txt,doc,png,jpg,mp3,doc,py etc
-    4)  To use it needs a list of keys in number forms. And the file name.
-    5)  It can encrypt the whole partition of a disk. But This program should be placed on the root directory.
-    6)  There are no limitation. Anyone can change it modify in the next level.
+    4)  To use it needs a list of keys in number forms. And the file.
+    5)  It can encrypt the whole partition of a disk by --flood flag. But This program should be placed on the root directory.
+    6)  There are no limitation. Anyone can change and modify to reach in the next level.
     7)  No copyright will be applicable.
-    8)  This program is Platform independent. But you should install the python leatest version.
+    8)  This program is Platform independent. But you have to install the python leatest version.
     9)  Try to fun.
-    10) And Destroy everything. Goodbye
+    10) And Destroy everything by encryption. Goodbye
 '''
 import sys
 import os
@@ -62,11 +62,11 @@ def encrypt_flood(path):
 try:            
     if(len(sys.argv)<2):
         print("\n\tYou should use the arguments on the terminal")
-        print("\n\tFor further details use python3 encrypt.py -h")
+        print("\n\tFor further details use python3 bncrypt.py -h")
         input("\n\tPress any key to retry...")
     elif(len(sys.argv)==2):
         if(sys.argv[1]=="--flood"):
-            print("\n\tUse\t:\tpython3 aencrypt.py [pin_list] --flood")
+            print("\n\tUse\t:\tpython3 bencrypt.py [pin_list] --flood")
         elif(sys.argv[1]=="--destroy"):
             os.remove(__file__)
         elif(sys.argv[1]=="-v"):
@@ -76,7 +76,7 @@ try:
             print("\n\t--help   \t:\tTo show help")
             print("\n\t--flood  \t:\tTo recursively encryption")
             print("\n\t--destroy\t:\tTo self destroy")
-            print("\n\tUse      \t:\tpython3 aencrypt.py [pin_list] file_name")
+            print("\n\tUse      \t:\tpython3 bencrypt.py [pin_list] file_name")
         elif(len(sys.argv)>=3): 
             encrypt_decrypt(sys.argv[1],sys.argv[2]) # [key list] [file name]
     elif(len(sys.argv)==3):
@@ -86,5 +86,5 @@ try:
     else:
         print("\n\tYou can't use more that 2 arguments")
 except:
-    print("\n\tUse\t:\tpython3 aencrypt.py -h")
+    print("\n\tUse\t:\tpython3 bencrypt.py -h")
 # END CODE
