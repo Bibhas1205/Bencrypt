@@ -6,8 +6,8 @@
     Date : 19/02/2023
     version : 0.1v
     Encoding : UTF-8
-    Lines : 88 lines
-    Actual code : 63 lines
+    Lines : 90 lines
+    Actual code : 65 lines
     
     DOCUMENTATION
                                                
