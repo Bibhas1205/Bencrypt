@@ -1,7 +1,7 @@
 '''
-    AENCRYPT
+    BENCRYPT
 
-    Project : Aencrypt[asymmetric encryption]
+    Project : Bencrypt[Byte encryption]
     Editor : Bibhas Das
     Date : 19/02/2023
     version : 0.1v
@@ -13,7 +13,7 @@
                                                
     1)  This program is fully based on Python or Python3
     2)  The Program name can be modified.
-    3)  It can perform a asymmetric encryption of any types of files, like txt,doc,png,jpg,mp3,doc,py etc
+    3)  It can perform a Byte encryption of any types of files, like txt,doc,png,jpg,mp3,doc,py etc
     4)  To use it needs a list of keys in number forms. And the file name.
     5)  It can encrypt the whole partition of a disk. But This program should be placed on the root directory.
     6)  There are no limitation. Anyone can change it modify in the next level.
