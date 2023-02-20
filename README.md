@@ -7,3 +7,10 @@ Examples:  python3 bencrypt.py [100,101] test.txt
 
 
 Remember the list values should be less than equls to 255. It is mandatory. Example [0,100,200,255]
+
+
+To decode You should run the same command but the list should be reversed. Exampple [100,101] => [101,100]
+
+Encode :  python3 bencrypt.py [100,101] test.py
+
+Decode :  python3 bencrypt.py [101,100] test.py
