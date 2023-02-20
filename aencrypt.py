@@ -69,6 +69,8 @@ try:
             print("\n\tUse\t:\tpython3 aencrypt.py [pin_list] --flood")
         elif(sys.argv[1]=="--destroy"):
             os.remove(__file__)
+        elif(sys.argv[1]=="-v"):
+            print("\n\tversion : 0.1v")
         elif(sys.argv[1]=="-h" or sys.argv[1]=="--help"):
             print("\n\t-h       \t:\tTo show help")
             print("\n\t--help   \t:\tTo show help")
